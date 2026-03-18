@@ -62,6 +62,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        <meta name="google-site-verification" content="uZjsVoMUIm74DBNBw7JXOCJ4mk8AMicw-CtY-K9PxEE" />
         <link rel="canonical" href={SITE_URL} />
       </head>
       <body className="min-h-screen flex flex-col bg-white">

@@ -34,7 +34,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     year: "2015",
     title: "公司成立",
-    description: "TechVision 在北京中关村正式成立，聚焦大数据技术研发",
+    description: "TechVision 在武汉光谷正式成立，聚焦大数据技术研发",
   },
   {
     year: "2017",
