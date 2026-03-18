@@ -1,6 +1,11 @@
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { COMPANY_INTRO } from "@/data/company";
 
+const HEADQUARTERS_ADDRESS = "江夏区光谷大道77号光谷金融港";
+const HEADQUARTERS_LAT = 30.456;
+const HEADQUARTERS_LON = 114.4253;
+const MAP_SRC = `https://www.openstreetmap.org/export/embed.html?bbox=${HEADQUARTERS_LON - 0.01}%2C${HEADQUARTERS_LAT - 0.006}%2C${HEADQUARTERS_LON + 0.01}%2C${HEADQUARTERS_LAT + 0.006}&layer=mapnik&marker=${HEADQUARTERS_LAT}%2C${HEADQUARTERS_LON}`;
+
 export function CompanyIntro() {
   return (
     <section className="section-padding">
@@ -34,17 +39,18 @@ export function CompanyIntro() {
 
           <AnimateOnScroll direction="right">
             <div className="relative">
-              <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gradient-to-br from-primary-100 to-accent-400/20">
-                <div className="flex h-full items-center justify-center">
-                  <div className="text-center">
-                    <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl gradient-bg shadow-xl">
-                      <span className="text-3xl font-bold text-white">T</span>
-                    </div>
-                    <p className="mt-4 text-sm font-medium text-gray-400">
-                      TechVision 总部大楼
-                    </p>
-                  </div>
-                </div>
+              <div className="aspect-[4/3] overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
+                <iframe
+                  title="TechVision 总部地图"
+                  src={MAP_SRC}
+                  className="h-full w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              <div className="mt-3 rounded-2xl bg-white/90 px-4 py-3 text-sm text-gray-600 ring-1 ring-gray-100 backdrop-blur">
+                <p className="font-semibold text-gray-800">TechVision 总部</p>
+                <p className="mt-1">{HEADQUARTERS_ADDRESS}</p>
               </div>
               <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-2xl bg-gradient-to-br from-primary-400 to-accent-400 opacity-20 blur-sm" />
             </div>

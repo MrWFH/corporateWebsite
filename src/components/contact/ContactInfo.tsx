@@ -5,6 +5,10 @@ import {
   CONTACT_EMAIL,
 } from "@/lib/constants";
 
+const HEADQUARTERS_LAT = 30.456;
+const HEADQUARTERS_LON = 114.4253;
+const MAP_SRC = `https://www.openstreetmap.org/export/embed.html?bbox=${HEADQUARTERS_LON - 0.01}%2C${HEADQUARTERS_LAT - 0.006}%2C${HEADQUARTERS_LON + 0.01}%2C${HEADQUARTERS_LAT + 0.006}&layer=mapnik&marker=${HEADQUARTERS_LAT}%2C${HEADQUARTERS_LON}`;
+
 const items = [
   {
     icon: MapPin,
@@ -61,12 +65,13 @@ export function ContactInfo() {
       </div>
 
       <div className="overflow-hidden rounded-2xl border border-gray-100">
-        <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-50 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin size={40} className="mx-auto text-gray-300" />
-            <p className="mt-2 text-sm text-gray-400">地图区域</p>
-          </div>
-        </div>
+        <iframe
+          title="TechVision 联系地址地图"
+          src={MAP_SRC}
+          className="aspect-[4/3] w-full"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </div>
   );

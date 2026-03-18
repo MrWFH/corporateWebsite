@@ -89,4 +89,28 @@ export const NEWS_LIST: NewsItem[] = [
     date: "2025-09-10",
     category: "tech",
   },
+  {
+    id: "10",
+    title: "TechVision 成都研发中心正式启用，西南布局再进一步",
+    summary:
+      "TechVision 成都研发中心于近日正式投入运营，将重点承担 AI 算法研发和行业解决方案孵化工作，进一步完善全国研发网络布局。",
+    date: "2025-08-28",
+    category: "company",
+  },
+  {
+    id: "11",
+    title: "边缘计算与 IoT：下一代智能工厂的技术底座",
+    summary:
+      "随着工业 4.0 的深入推进，边缘计算正在成为智能工厂的核心基础设施。本文探讨了边缘计算在制造场景中的架构设计与落地实践。",
+    date: "2025-08-15",
+    category: "tech",
+  },
+  {
+    id: "12",
+    title: "2025 中国企业数字化转型白皮书发布",
+    summary:
+      "由 TechVision 联合多家研究机构编撰的《2025 中国企业数字化转型白皮书》正式发布，全面梳理了各行业数字化转型的现状、挑战与路径。",
+    date: "2025-08-01",
+    category: "industry",
+  },
 ];
