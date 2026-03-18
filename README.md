@@ -3,7 +3,7 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# TechVision 企业官网
+# 元宇宙科技 企业官网
 
 基于 Next.js 14 + TypeScript + Tailwind CSS + Framer Motion 构建的现代互联网科技企业官网。
 

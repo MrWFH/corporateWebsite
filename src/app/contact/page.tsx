@@ -7,12 +7,12 @@ import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "联系我们",
   description:
-    "联系 TechVision，获取定制化数字化转型解决方案。提供在线咨询、电话咨询、邮件联系等多种方式，专家团队 24 小时内响应。",
-  keywords: ["联系TechVision", "在线咨询", "数字化转型咨询", "企业合作"],
+    "联系 元宇宙科技，获取定制化数字化转型解决方案。提供在线咨询、电话咨询、邮件联系等多种方式，专家团队 24 小时内响应。",
+  keywords: ["联系元宇宙科技", "在线咨询", "数字化转型咨询", "企业合作"],
   openGraph: {
-    title: "联系我们 | TechVision",
+    title: "联系我们 | 元宇宙科技",
     description:
-      "与 TechVision 专家团队沟通，获取适合您企业的定制化解决方案。",
+      "与 元宇宙科技 专家团队沟通，获取适合您企业的定制化解决方案。",
   },
 };
 

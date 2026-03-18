@@ -11,9 +11,9 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "TechVision 是一家专注于人工智能、云计算和大数据技术的创新型科技企业，为企业提供全方位数字化转型解决方案。",
+    "元宇宙科技 是一家专注于人工智能、云计算和大数据技术的创新型科技企业，为企业提供全方位数字化转型解决方案。",
   keywords: [
-    "TechVision",
+    "元宇宙科技",
     "人工智能",
     "云计算",
     "大数据",
@@ -54,6 +54,32 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      alternateName: "元宇宙科技 科技",
+      url: SITE_URL,
+    },
+    {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      description:
+        "专注于人工智能、云计算和大数据技术的创新型科技企业，为企业提供全方位数字化转型解决方案。",
+      foundingDate: "2015",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+86-400-888-9999",
+        contactType: "customer service",
+        availableLanguage: "Chinese",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -64,6 +90,10 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="uZjsVoMUIm74DBNBw7JXOCJ4mk8AMicw-CtY-K9PxEE" />
         <link rel="canonical" href={SITE_URL} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="min-h-screen flex flex-col bg-white">
         <Header />

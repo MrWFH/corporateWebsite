@@ -41,7 +41,7 @@ export function CompanyIntro() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
                 <iframe
-                  title="TechVision 总部地图"
+                  title="元宇宙科技 总部地图"
                   src={MAP_SRC}
                   className="h-full w-full"
                   loading="lazy"
@@ -49,7 +49,7 @@ export function CompanyIntro() {
                 />
               </div>
               <div className="mt-3 rounded-2xl bg-white/90 px-4 py-3 text-sm text-gray-600 ring-1 ring-gray-100 backdrop-blur">
-                <p className="font-semibold text-gray-800">TechVision 总部</p>
+                <p className="font-semibold text-gray-800">元宇宙科技 总部</p>
                 <p className="mt-1">{HEADQUARTERS_ADDRESS}</p>
               </div>
               <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-2xl bg-gradient-to-br from-primary-400 to-accent-400 opacity-20 blur-sm" />

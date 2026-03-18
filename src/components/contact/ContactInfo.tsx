@@ -66,7 +66,7 @@ export function ContactInfo() {
 
       <div className="overflow-hidden rounded-2xl border border-gray-100">
         <iframe
-          title="TechVision 联系地址地图"
+          title="元宇宙科技 联系地址地图"
           src={MAP_SRC}
           className="aspect-[4/3] w-full"
           loading="lazy"

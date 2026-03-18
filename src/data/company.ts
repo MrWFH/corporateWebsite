@@ -18,10 +18,10 @@ export interface CultureValue {
 }
 
 export const COMPANY_INTRO = {
-  title: "关于 TechVision",
+  title: "关于 元宇宙科技",
   subtitle: "以技术驱动创新，用智慧连接未来",
   description:
-    "TechVision 成立于 2015 年，是一家专注于人工智能、云计算和大数据技术的创新型科技企业。我们致力于为企业提供全方位的数字化转型解决方案，帮助客户在数字经济时代实现业务增长和价值创造。经过多年发展，我们已服务超过 500 家企业客户，覆盖金融、零售、制造、政务等多个行业领域。",
+    "元宇宙科技 成立于 2015 年，是一家专注于人工智能、云计算和大数据技术的创新型科技企业。我们致力于为企业提供全方位的数字化转型解决方案，帮助客户在数字经济时代实现业务增长和价值创造。经过多年发展，我们已服务超过 500 家企业客户，覆盖金融、零售、制造、政务等多个行业领域。",
   highlights: [
     { label: "成立时间", value: "2015 年" },
     { label: "员工规模", value: "800+" },
@@ -34,7 +34,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     year: "2015",
     title: "公司成立",
-    description: "TechVision 在武汉光谷正式成立，聚焦大数据技术研发",
+    description: "元宇宙科技 在武汉光谷正式成立，聚焦大数据技术研发",
   },
   {
     year: "2017",

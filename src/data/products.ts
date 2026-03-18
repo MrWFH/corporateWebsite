@@ -11,7 +11,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "cloud-platform",
     icon: "Cloud",
-    name: "TechVision 云平台",
+    name: "元宇宙科技 云平台",
     description:
       "企业级云基础设施平台，提供弹性计算、存储、网络等全栈云服务，助力企业快速上云。",
     features: ["弹性伸缩", "高可用架构", "多云管理", "安全合规"],
